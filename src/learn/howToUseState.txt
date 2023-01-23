@@ -1,0 +1,26 @@
+import { useState } from "react"
+
+const HowToUseState = () => {
+    // let name = 'mario'
+    const [name, setName] = useState('Mario')
+    const [age, setAge] = useState(25)
+
+    const handleClick = () => {
+        setName('luigi')
+        setAge(30)
+        console.log(name, age);
+    }
+
+    // call the "setName to call the new value if on cLick"
+
+
+    return (
+        <div className="home">
+            <h2>HomePage</h2>
+            <p>My name is {name} { age }</p>
+            <button onClick={handleClick}>Click</button>
+        </div>
+    )
+}
+
+export default HowToUseState;

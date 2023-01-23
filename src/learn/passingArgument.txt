@@ -1,0 +1,22 @@
+const Home = () => {
+
+    const passclickWithoutArg = (e) => {
+        console.log("Pass Click Without Arguments");
+        console.log("my name is gian", e);
+    }
+
+    const passCLickWithArg = (name, e) => {
+        console.log("Pass Click With Arguments");
+        console.log(`My name is ${name}`, e.target);
+    }
+
+    return ( 
+        <div className="home">
+            <h2>HomePage</h2>
+            <button onClick={passclickWithoutArg}>Without Arguments</button>
+            <button onClick={(e) => passCLickWithArg("jayen", e)}>With Arguments</button>
+        </div>
+    );
+}
+
+export default Home;

@@ -11,14 +11,6 @@ const Home = () => {
     ]);
 
 
-    // function generatedText() {
-    //     const charaters = 'abcdefghijklmnopqrstuvwxyz';
-    //     const charatersLength = charaters.length
-    //     for (let i = 0; i < charatersLength.length; i++) {
-    //         charaters.charAt(Math.floor(Math.random() * charatersLength))
-    //     }
-    // }
-
     function generatedId() {
         return Date.now()
     }
